@@ -18,7 +18,7 @@ RSpec.describe Student, type: :model do
       harry = Student.create!(name: "Harry", age: 12, house: "Gryffindor")
       george = Student.create!(name: "George", age: 13, house: "Gryffindor")
 
-      expect(Student.all.average_age).to eq(12.5)
+      expect(Student.average_age).to eq(12.5)
     end
   end
 end
